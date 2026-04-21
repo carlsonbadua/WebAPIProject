@@ -25,15 +25,6 @@ Content-Type: application/json
 
 ###
 
-POST {{ContosoPizza_HostAddress}}/pizza/
-Content-Type: application/json
-{
-  "name": "Veggie",
-  "isGlutenFree": true
-}
-
-###
-
 PUT {{ContosoPizza_HostAddress}}/pizza/4
 Content-Type: application/json
 {
