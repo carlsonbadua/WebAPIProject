@@ -4,3 +4,44 @@ GET {{ContosoPizza_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{ContosoPizza_HostAddress}}/pizza/
+Accept: application/json
+
+###
+
+GET {{ContosoPizza_HostAddress}}/pizza/4
+Accept: application/json
+
+###
+
+
+POST {{ContosoPizza_HostAddress}}/pizza/
+Content-Type: application/json
+{
+  "name": "Hawaii",
+  "isGlutenFree": false
+}
+
+###
+
+POST {{ContosoPizza_HostAddress}}/pizza/
+Content-Type: application/json
+{
+  "name": "Veggie",
+  "isGlutenFree": true
+}
+
+###
+
+PUT {{ContosoPizza_HostAddress}}/pizza/4
+Content-Type: application/json
+{
+  "id": 4,
+  "name": "Veggie Deluxe",
+  "isGlutenFree": true
+}
+
+###
+
+DELETE {{ContosoPizza_HostAddress}}/pizza/4
